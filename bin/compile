@@ -6,7 +6,7 @@ folder="$(cat $ENV_DIR/NPMRC_FOLDER)"
 npmrc="$(cat $ENV_DIR/NPMRC)"
 
 if [ "$npmrc" != "" ]; then
-    if [ "$folder" != ""]; then
+    if [ "$folder" != "" ]; then
         echo "-----> Using .npmrc from config var NPMRC_FOLDER"
         cd "$build_dir/$folder"
     fi
