@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [-f $1package.json ]; then
+if [-f $1/package.json ]; then
     echo "buildpack-npmrc"
     exit 0
 else
