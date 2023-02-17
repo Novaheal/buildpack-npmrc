@@ -4,7 +4,8 @@ ENV_DIR=${3:-}
 build_dir=${1:-}
 npmrc="$(cat $ENV_DIR/NPMRC)"
 
-echo $npmrc
+ls -a 
+mkdir ./frontend
 
 if [ "$npmrc" != "" ]; then
 	echo "-----> Using .npmrc from config var NPMRC"
