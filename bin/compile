@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 ENV_DIR=${3:-}
 build_dir=${1:-}
