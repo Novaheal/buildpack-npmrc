@@ -12,6 +12,3 @@ if [ "$npmrc" != "" ]; then
 	echo "-----> Using .npmrc from config var NPMRC"
 	echo "$npmrc" > "$build_dir/frontend/.npmrc"
 fi
-
-echo "Contents of $build_dir/frontend directory:"
-ls -a "$build_dir/frontend"
