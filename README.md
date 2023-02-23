@@ -13,6 +13,6 @@ $ heroku buildpacks:set --index 1 https://github.com/Novaheal/buildpack-npmrc.gi
 2. Set the env vars at heroku
 
 ```
- $ heroku config:set NPMRC=//registry.npmjs.org/:_authToken=<your-token>
+ $ heroku config:set NPMRC=registry=https://registry.npmjs.org @<your-organization>:registry=https://npm.pkg.github.com //npm.pkg.githubcom/:_authToken=<your-token>
  $ heroku config:set SUBFOLDER=<your-subfolder>
 ```
