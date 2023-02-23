@@ -3,12 +3,13 @@
 ENV_DIR=${3:-}
 build_dir=${1:-}
 npmrc="$(cat $ENV_DIR/NPMRC)"
+subfolder="$(cat $ENV_DIR/SUBFOLDER)"
 
-if [ ! -d "$build_dir/frontend" ]; then
-    mkdir "$build_dir/frontend"
+if [ ! -d "$build_dir/$subfolder" ]; then
+    mkdir "$build_dir/$subfolder"
 fi
 
 if [ "$npmrc" != "" ]; then
 	echo "-----> Using .npmrc from config var NPMRC"
-	echo "$npmrc" > "$build_dir/frontend/.npmrc"
+	echo "$npmrc" > "$build_dir/$subfolder/.npmrc"
 fi
